@@ -1,0 +1,10 @@
+{
+  "env": {
+    "test": {
+      "presets": [["env", {"modules": "commonjs"}], "stage-2", "react"],
+      "sourceMaps": "inline",
+      "retainLines": true
+    }
+  },
+  "plugins": ["transform-class-properties", "transform-object-rest-spread"]
+}

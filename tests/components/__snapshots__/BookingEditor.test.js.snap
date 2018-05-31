@@ -1,0 +1,223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BookingEditor (Sample tests) should match the snapshot 1`] = `
+<form
+  autocomplete="off"
+>
+  <div
+    class="form-group sc-bwzfXH hBMOiY"
+  >
+    <div
+      class="sc-bdVaJa EHgII"
+      error=""
+      fill="currentColor"
+      size="24"
+      style="display: inline-flex; justify-content: center; align-items: center;"
+      valid=""
+    >
+      <svg
+        fill="currentColor"
+        height="24"
+        style="display: inline-block; vertical-align: middle;"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 17.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM9.5 8c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8zm6.5 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+        />
+      </svg>
+    </div>
+    <select
+      class="form-control form-control-lg"
+      name="room"
+    >
+      <option
+        label="Room"
+      />
+      <option
+        value="CAR"
+      >
+        Cardiff
+      </option>
+      <option
+        value="DUB"
+      >
+        Dublin
+      </option>
+      <option
+        value="EDN"
+      >
+        Edinburgh
+      </option>
+      <option
+        value="LDN"
+      >
+        London
+      </option>
+    </select>
+  </div>
+  <div
+    class="form-group sc-bwzfXH hBMOiY"
+  >
+    <div
+      class="sc-bdVaJa EHgII"
+      error=""
+      fill="currentColor"
+      size="24"
+      style="display: inline-flex; justify-content: center; align-items: center;"
+      valid=""
+    >
+      <svg
+        fill="currentColor"
+        height="24"
+        style="display: inline-block; vertical-align: middle;"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <path
+          d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+        />
+      </svg>
+    </div>
+    <div
+      class="DateRangePicker DateRangePicker_1 DateRangePicker__block DateRangePicker__block_2"
+    >
+      <div>
+        <div
+          class="DateRangePickerInput DateRangePickerInput_1 DateRangePickerInput__withBorder DateRangePickerInput__withBorder_2 DateRangePickerInput__block DateRangePickerInput__block_3"
+        >
+          <div
+            class="DateInput DateInput_1"
+          >
+            <input
+              aria-describedby="DateInput__screen-reader-message-bookingStartDate"
+              aria-label="Start Date"
+              autocomplete="off"
+              class="DateInput_input DateInput_input_1"
+              id="bookingStartDate"
+              name="bookingStartDate"
+              placeholder="Start Date"
+              type="text"
+              value=""
+            />
+            <p
+              class="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+              id="DateInput__screen-reader-message-bookingStartDate"
+            >
+              Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+            </p>
+          </div>
+          <div
+            aria-hidden="true"
+            class="DateRangePickerInput_arrow DateRangePickerInput_arrow_1"
+            role="presentation"
+          >
+            <svg
+              class="DateRangePickerInput_arrow_svg DateRangePickerInput_arrow_svg_1"
+              viewBox="0 0 1000 1000"
+            >
+              <path
+                d="M694.4 242.4l249.1 249.1c11 11 11 21 0 32L694.4 772.7c-5 5-10 7-16 7s-11-2-16-7c-11-11-11-21 0-32l210.1-210.1H67.1c-13 0-23-10-23-23s10-23 23-23h805.4L662.4 274.5c-21-21.1 11-53.1 32-32.1z"
+              />
+            </svg>
+          </div>
+          <div
+            class="DateInput DateInput_1"
+          >
+            <input
+              aria-describedby="DateInput__screen-reader-message-bookingEndDate"
+              aria-label="End Date"
+              autocomplete="off"
+              class="DateInput_input DateInput_input_1"
+              id="bookingEndDate"
+              name="bookingEndDate"
+              placeholder="End Date"
+              type="text"
+              value=""
+            />
+            <p
+              class="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+              id="DateInput__screen-reader-message-bookingEndDate"
+            >
+              Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="form-group sc-bwzfXH hBMOiY"
+  >
+    <div
+      class="sc-bdVaJa EHgII"
+      error=""
+      fill="currentColor"
+      size="24"
+      style="display: inline-flex; justify-content: center; align-items: center;"
+      valid=""
+    >
+      <svg
+        fill="currentColor"
+        height="24"
+        style="display: inline-block; vertical-align: middle;"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <path
+          d="M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z"
+        />
+      </svg>
+    </div>
+    <input
+      class="form-control form-control-lg"
+      data-testid="contact-input"
+      name="contact"
+      placeholder="Contact"
+      value=""
+    />
+  </div>
+  <div
+    class="form-group sc-bwzfXH hBMOiY"
+  >
+    <div
+      class="sc-bdVaJa EHgII"
+      fill="currentColor"
+      size="24"
+      style="display: inline-flex; justify-content: center; align-items: center;"
+      valid=""
+    >
+      <svg
+        fill="currentColor"
+        height="24"
+        style="display: inline-block; vertical-align: middle;"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <path
+          d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"
+        />
+      </svg>
+    </div>
+    <textarea
+      class="form-control form-control-lg"
+      name="description"
+      placeholder="Description"
+    />
+  </div>
+  <div
+    class="form-group sc-bwzfXH hBMOiY"
+  >
+    <span />
+    <button
+      class="btn btn-primary"
+      data-testid="booking-submit"
+      type="submit"
+    >
+      Submit
+    </button>
+  </div>
+</form>
+`;

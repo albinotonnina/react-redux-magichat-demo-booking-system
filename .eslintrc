@@ -1,0 +1,27 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "rules": {
+    "react/prop-types": true
+  },
+  "globals": {
+    "console": true,
+    "document": true,
+    "describe": true,
+    "beforeAll": true,
+    "beforeEach": true,
+    "afterAll": true,
+    "afterEach": true,
+    "test": true,
+    "it": true,
+    "expect": true,
+    "jest": true,
+    "module": true,
+    "__dirname": true,
+    "window": true,
+    "Promise": true,
+    "requestAnimationFrame": true,
+    "fetch": true,
+    "require": true
+  }
+}

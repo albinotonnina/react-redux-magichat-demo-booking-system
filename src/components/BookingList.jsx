@@ -1,55 +1,69 @@
-import React from "react";
-import PropTypes from 'prop-types';
-import _ from 'lodash';
-import moment from 'moment';
+import React from 'react'
+import PropTypes from 'prop-types'
+import moment from 'moment'
 
-const BookingList = (props) => {
-    const {bookings, selectedBookingId, rooms, onSelectBooking} = props;
+class BookingList extends React.Component {
+  static propTypes = {
+    bookings: PropTypes.array.isRequired,
+    rooms: PropTypes.array.isRequired,
+    onItemClick: PropTypes.func.isRequired,
+    search: PropTypes.string
+  }
 
-    if (_.isEmpty(bookings)) {
-        return (
-            <div>No data</div>
-        );
-    }
+  render() {
+    const {bookings, rooms, onItemClick, search} = this.props
 
-    return (
-        <table className="table">
-            <thead>
-            <tr>
-                <th scope="col">Room</th>
-                <th scope="col">Start</th>
-                <th scope="col">End</th>
-                <th scope="col">Contact</th>
-                <th scope="col">Description</th>
-            </tr>
-            </thead>
-            <tbody>
-            {_.map(bookings, ({ id, description, contact, start, end, roomId }) => {
-                const room = _.find(rooms, ({id}) => id === roomId);
+    const filterBookingTexts = b =>
+      ~`${b.roomId} ${b.contact} ${b.description}`.toLowerCase().indexOf(search)
 
-                return (
-                    <tr
-                        key={id}
-                        onClick={() => onSelectBooking(id)}
-                    >
-                        <th scope="row">{_.get(room, 'description')} ({roomId})</th>
-                        <td>{moment(start).format('lll')}</td>
-                        <td>{moment(end).format('lll')}</td>
-                        <td>{contact}</td>
-                        <td>{description}</td>
-                    </tr>
-                )
-            })}
-            </tbody>
-        </table>
+    const filteredBookings = bookings.filter(filterBookingTexts)
+
+    return filteredBookings.length > 0 ? (
+      <table className="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Room</th>
+            <th scope="col">Start</th>
+            <th scope="col">End</th>
+            <th scope="col">Contact</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          {filteredBookings.map(
+            ({id, description, contact, start, end, roomId}) => {
+              const room = rooms.find(({id}) => id === roomId)
+
+              const startDate = moment(start)
+              const endDate = moment(end)
+
+              const formattedEndDate = endDate.format(
+                endDate.diff(startDate, 'days') > 0 ? 'MMMM Do, HH:mm' : 'HH:mm'
+              )
+
+              return (
+                <tr
+                  key={id}
+                  onClick={() => onItemClick(id)}
+                  style={{cursor: 'pointer'}}
+                >
+                  <th scope="row">
+                    {room.description} ({roomId})
+                  </th>
+                  <td>{startDate.format('MMMM Do, HH:mm')}</td>
+                  <td>{formattedEndDate}</td>
+                  <td>{contact}</td>
+                  <td>{description}</td>
+                </tr>
+              )
+            }
+          )}
+        </tbody>
+      </table>
+    ) : (
+      <div>No data</div>
     )
-};
+  }
+}
 
-BookingList.propTypes = {
-    bookings: PropTypes.arrayOf(PropTypes.object),
-    rooms: PropTypes.arrayOf(PropTypes.object),
-    onSelectBooking: PropTypes.func,
-    selectedBookingId: PropTypes.string,
-};
-
-export default BookingList;
+export default BookingList
