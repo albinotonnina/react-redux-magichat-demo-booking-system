@@ -1,0 +1,39 @@
+{
+  "LDN": {
+    "id": "LDN",
+    "description": "London",
+    "size": 40,
+    "options": [
+      "AVCN",
+      "Phone",
+      "TV"
+    ]
+  },
+  "EDN": {
+    "id": "EDN",
+    "description": "Edinburgh",
+    "size": 20,
+    "options": [
+      "AVCN",
+      "Phone",
+      "TV"
+    ]
+  },
+  "DUB": {
+    "id": "DUB",
+    "description": "Dublin",
+    "size": 10,
+    "options": [
+      "Phone",
+      "TV"
+    ]
+  },
+  "CAR": {
+    "id": "CAR",
+    "description": "Cardiff",
+    "size": 5,
+    "options": [
+      "Phone"
+    ]
+  }
+}

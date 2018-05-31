@@ -1,0 +1,26 @@
+{
+  "d75c55ca-1ac9-46dd-843f-2f5d37fda552": {
+    "id": "d75c55ca-1ac9-46dd-843f-2f5d37fda552",
+    "description": "New Avengers Orientation",
+    "contact": "Tony Stark",
+    "roomId": "LDN",
+    "start": "2018-06-01T09:00:00.000Z",
+    "end": "2018-06-03T17:00:00.000Z"
+  },
+  "c90422f4-8c8a-44f4-a058-411833a3c58b2": {
+    "id": "c90422f4-8c8a-44f4-a058-411833a3c58b2",
+    "description": "Advanced Combat Skills",
+    "contact": "Steve Roger",
+    "roomId": "EDN",
+    "start": "2018-06-02T09:00:00.000Z",
+    "end": "2018-06-02T17:00:00.000Z"
+  },
+  "28d042f9-640a-4018-a84e-6718fea3861e": {
+    "id": "28d042f9-640a-4018-a84e-6718fea3861e",
+    "description": "Efficient Material Transformation",
+    "contact": "Bruce Banner",
+    "roomId": "DUB",
+    "start": "2018-06-03T13:00:00.000Z",
+    "end": "2018-06-03T17:00:00.000Z"
+  }
+}
